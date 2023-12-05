@@ -238,8 +238,8 @@ def main():
     bird = Bird(3, (900, 400))
     bombs = [Bomb() for _ in range(NUM_OF_BOMBS)]  # Bombインスタンス
     bomb_counter = ScoreBoard(NUM_OF_BOMBS)
-    beams = []
-    bomb_effects = []
+    beams = []  # ビームに空きリスト
+    bomb_effects = []  # 爆発に空きリスト
 
     clock = pg.time.Clock()
     tmr = 0
