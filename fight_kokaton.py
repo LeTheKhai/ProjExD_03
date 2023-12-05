@@ -268,8 +268,9 @@ def main():
                     bird.change_img(6, screen)
                     bomb_effect = BombEffect(bomb)
                     bomb_effects.append(bomb_effect)
-
+            # Noneでない爆弾だけをリスト化
             bombs = [bomb for bomb in bombs if bomb is not None]
+            # Noneでないビームだけをリスト化
             beams = [beam for beam in beams if beam is not None]
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
